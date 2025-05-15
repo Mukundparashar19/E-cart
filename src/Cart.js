@@ -17,7 +17,7 @@ localStorage.setItem('kart',JSON.stringify(updatedCart))
 }
 
 useEffect(()=>{
-    const sk = JSON.parse(localStorage.getItem('kart'))
+    const sk = JSON.parse(localStorage.getItem('kart')) || []
     setuk(sk)
 },[])
 
